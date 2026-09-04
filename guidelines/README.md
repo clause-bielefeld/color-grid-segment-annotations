@@ -1,0 +1,2 @@
+Link to set up instructions: https://docs.google.com/document/d/1SMgCVqWYsDfkLjz0KViDgRcy30VbBCKUg1wi8fTTMfc/edit?usp=sharing
+Link to annotation guidelines: https://docs.google.com/document/d/1qeJnMi2b5fLR4oH33G19A7ZnFqzW9vGyxVXxNC_9NaA/

@@ -1,0 +1,120 @@
+<View>
+
+  <Image name="image" value="$url"/>
+  <Text name="text" value="$text" granularity="word"/>
+  
+  <View style="display: flex; flex-direction: row; gap: 40px; margin-top: 20px;">
+    <Header value="References in Dialogue"/>
+  	<View style="display: grid; grid-template-columns: repeat(3, 1fr); row-gap: 0px, column_gap: 10px;">
+        <Labels name="dialogue_reference" toName="text" exclusive="true">
+          <Label value="yes" alias="with_reference" selected="true"/>
+          <Label value="no" alias="no_reference"/>
+          <Label value="unclear location" alias="unclear_location_reference"/>
+        </Labels>
+      </View>
+  </View>
+
+  <View style="display: flex; flex-direction: row; gap: 40px; margin-top: 20px;" visibleWhen="region-selected" whenLabelValue="with_reference">
+
+    <View style="display: flex; flex-direction: column; gap: 0px; width: 250px;">
+      <Header value="Target"/>
+      <View style="display: grid; grid-template-columns: repeat(3, 1fr); row-gap: 0px, column_gap: 10px;">
+        <Labels name="t1" toName="text" exclusive="true">
+          <Label value="t1" hotkey="1"/>
+        </Labels>
+        <Labels name="t2" toName="text" exclusive="true">
+          <Label value="t2" hotkey="2"/>
+        </Labels>
+        <Labels name="t3" toName="text" exclusive="true">
+          <Label value="t3" hotkey="3"/>
+        </Labels>
+        <Labels name="t4" toName="text" exclusive="true">
+          <Label value="t4" hotkey="4"/>
+        </Labels>
+        <Labels name="t5" toName="text" exclusive="true">
+          <Label value="t5" hotkey="5"/>
+        </Labels>
+        <Labels name="t6" toName="text" exclusive="true">
+          <Label value="t6" hotkey="6"/>
+        </Labels>
+        <Labels name="t7" toName="text" exclusive="true">
+          <Label value="t7" hotkey="7"/>
+        </Labels>
+        <Labels name="t8" toName="text" exclusive="true">
+          <Label value="t8" hotkey="8"/>
+        </Labels>
+        <Labels name="t9" toName="text" exclusive="true">
+          <Label value="t9" hotkey="9"/>
+        </Labels>
+      </View>
+    </View>
+
+    <View style="display: flex; flex-direction: column; gap: 0px; width: 250px;">
+      <Header value="Distractor1"/>
+      <View style="display: grid; grid-template-columns: repeat(3, 1fr); row-gap: 0px, column_gap: 10px;">
+        <Labels name="d1_1" toName="text" exclusive="false">
+          <Label value="d1_1" hotkey="q"/>
+        </Labels>
+        <Labels name="d1_2" toName="text" exclusive="false">
+          <Label value="d1_2" hotkey="w"/>
+        </Labels>
+        <Labels name="d1_3" toName="text" exclusive="false">
+          <Label value="d1_3" hotkey="e"/>
+        </Labels>
+        <Labels name="d1_4" toName="text" exclusive="false">
+          <Label value="d1_4" hotkey="r"/>
+        </Labels>
+        <Labels name="d1_5" toName="text" exclusive="false">
+          <Label value="d1_5" hotkey="t"/>
+        </Labels>
+        <Labels name="d1_6" toName="text" exclusive="false">
+          <Label value="d1_6" hotkey="z"/>
+        </Labels>
+        <Labels name="d1_7" toName="text" exclusive="false">
+          <Label value="d1_7" hotkey="u"/>
+        </Labels>
+        <Labels name="d1_8" toName="text" exclusive="false">
+          <Label value="d1_8" hotkey="i"/>
+        </Labels>
+        <Labels name="d1_9" toName="text" exclusive="false">
+          <Label value="d1_9" hotkey="o"/>
+        </Labels>
+      </View>
+    </View>
+
+    <View style="display: flex; flex-direction: column; gap: 0px; width: 250px;">
+      <Header value="Distractor2"/>
+      <View style="display: grid; grid-template-columns: repeat(3, 1fr); row-gap: 0px, column_gap: 10px;">
+        <Labels name="d2_1" toName="text" exclusive="false">
+          <Label value="d2_1" hotkey="a"/>
+        </Labels>
+        <Labels name="d2_2" toName="text" exclusive="false">
+          <Label value="d2_2" hotkey="s"/>
+        </Labels>
+        <Labels name="d2_3" toName="text" exclusive="false">
+          <Label value="d2_3" hotkey="d"/>
+        </Labels>
+        <Labels name="d2_4" toName="text" exclusive="false">
+          <Label value="d2_4" hotkey="f"/>
+        </Labels>
+        <Labels name="d2_5" toName="text" exclusive="false">
+          <Label value="d2_5" hotkey="g"/>
+        </Labels>
+        <Labels name="d2_6" toName="text" exclusive="false">
+          <Label value="d2_6" hotkey="h"/>
+        </Labels>
+        <Labels name="d2_7" toName="text" exclusive="false">
+          <Label value="d2_7" hotkey="j"/>
+        </Labels>
+        <Labels name="d2_8" toName="text" exclusive="false">
+          <Label value="d2_8" hotkey="k"/>
+        </Labels>
+        <Labels name="d2_9" toName="text" exclusive="false">
+          <Label value="d2_9" hotkey="l"/>
+        </Labels>
+      </View>
+    </View>
+
+  </View>
+
+</View>
